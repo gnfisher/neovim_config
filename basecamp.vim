@@ -4,4 +4,4 @@ endfunction
 com -range=% -nargs=0 CopyToBasecamp :<line1>,<line2>call CopyToBasecamp()
 xnoremap <Leader>b <esc>:'<,'>CopyToBasecamp<CR>
 
-nmap <leader>g :silent !open -a iTerm.app '/usr/local/bin/gitsh' &> /dev/null &<CR><CR>:redraw!<CR>
+" nmap <leader>g :silent !open -a iTerm.app '/usr/local/bin/gitsh' &> /dev/null &<CR><CR>:redraw!<CR>

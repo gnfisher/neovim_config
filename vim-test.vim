@@ -7,4 +7,3 @@ let test#strategy = "dispatch"
 let test#scala#runner = 'blooptest'
 let g:test#scala#blooptest#executable = 'heroku local:run -- bloop'
 
-

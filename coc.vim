@@ -85,7 +85,7 @@ inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm()
 " Find symbol of current document.
 nnoremap <silent><nowait> <space>o  :<C-u>CocList outline<cr>
 " Search workspace symbols.
-nnoremap <silent><nowait> <space>s  :<C-u>CocList -I symbols<cr>
+nnoremap <silent><nowait> gs  :<C-u>CocList -I symbols<cr>
 
 " " Toggle panel with Tree Views
 " nnoremap <silent> <space>t :<C-u>CocCommand metals.tvp<CR>

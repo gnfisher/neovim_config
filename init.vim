@@ -8,6 +8,10 @@ Plug 'nelstrom/vim-textobj-rubyblock'
 Plug 'altercation/vim-colors-solarized'
 Plug 'rakr/vim-one'
 Plug 'jonathanfilip/vim-lucius'
+Plug 'dracula/vim'
+Plug 'nanotech/jellybeans.vim'
+" Plug 'vim-airline/vim-airline'
+" Plug 'vim-airline/vim-airline-themes'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'janko-m/vim-test'
@@ -35,6 +39,7 @@ Plug 'mattn/emmet-vim'
 Plug 'pangloss/vim-javascript'
 Plug 'leafgarland/typescript-vim'
 Plug 'peitalin/vim-jsx-typescript'
+Plug 'christoomey/vim-tmux-navigator'
 
 call plug#end()
 
@@ -49,4 +54,5 @@ source $HOME/.config/nvim/coc.vim
 source $HOME/.config/nvim/fzf.vim
 source $HOME/.config/nvim/navigation.vim
 source $HOME/.config/nvim/vim-test.vim
+source $HOME/.config/nvim/airline.vim
 
