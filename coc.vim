@@ -2,6 +2,9 @@ set updatetime=300
 set shortmess+=c
 set signcolumn=yes
 
+autocmd BufNew,BufEnter *.vim,*.rb,*.erb execute "silent! CocDisable"
+autocmd BufLeave *.vim,*.rb,*.erb execute "silent! CocEnable"
+
 " hi link CocFloating normal
 " Use tab for trigger completion with characters ahead and navigate.
 " Use command ':verbose imap <tab>' to make sure tab is not mapped by other plugin.
@@ -83,9 +86,9 @@ inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm()
       \: "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
 
 " Find symbol of current document.
-nnoremap <silent><nowait> <space>o  :<C-u>CocList outline<cr>
+nnoremap <silent><nowait> <space>o :<C-u>CocList outline<cr>
 " Search workspace symbols.
-nnoremap <silent><nowait> gs  :<C-u>CocList -I symbols<cr>
+nnoremap <silent><nowait> gs :<C-u>CocList -I symbols<cr>
 
 " " Toggle panel with Tree Views
 " nnoremap <silent> <space>t :<C-u>CocCommand metals.tvp<CR>

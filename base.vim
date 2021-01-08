@@ -135,16 +135,9 @@ xnoremap cp "+y
 nmap cv "+p
 nmap cV "+P
 
-
-
 " terminal escape
 tnoremap <leader><Esc> <C-\><C-n>
 
 " search
 nnoremap <leader>sub :%s///g<left><left>
 vnoremap <leader>sub :s///g<left><left>
-
-
-
-
-

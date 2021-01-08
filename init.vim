@@ -40,6 +40,7 @@ Plug 'pangloss/vim-javascript'
 Plug 'leafgarland/typescript-vim'
 Plug 'peitalin/vim-jsx-typescript'
 Plug 'christoomey/vim-tmux-navigator'
+Plug 'dense-analysis/ale'
 
 call plug#end()
 
