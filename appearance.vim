@@ -25,11 +25,11 @@ endfunction
 
 set tabline=%!TabLine()
 syntax enable
-" set t_Co=256 " 256 colors
+set t_Co=256 " 256 colors
 " a better pattern for drawing vertical borders.
 set fillchars+=vert:\|
 " set termguicolors
-set background=light
+set background=dark
 colorscheme solarized
 highlight clear SignColumn
 let g:is_posix = 1

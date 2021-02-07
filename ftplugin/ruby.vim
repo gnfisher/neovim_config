@@ -8,3 +8,5 @@ let g:ale_set_loclist = 0
 nnoremap gj :ALENextWrap<cr>
 nnoremap gk :ALEPreviousWrap<cr>
 nnoremap g1 :ALEFirst<cr>
+
+runtime macros/matchit.vim

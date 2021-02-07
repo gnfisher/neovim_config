@@ -30,6 +30,7 @@ Plug 'tpope/vim-dispatch'
 Plug 'tpope/vim-markdown'
 Plug 'tpope/vim-vinegar'
 Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-endwise'
 Plug 'jiangmiao/auto-pairs'
 Plug 'vim-ruby/vim-ruby'
 Plug 'ElmCast/elm-vim'
@@ -41,7 +42,8 @@ Plug 'leafgarland/typescript-vim'
 Plug 'peitalin/vim-jsx-typescript'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'dense-analysis/ale'
-
+Plug 'junegunn/goyo.vim'
+Plug 'fatih/vim-go'
 call plug#end()
 
 set encoding=utf-8
@@ -51,9 +53,9 @@ filetype plugin indent on
 source $HOME/.config/nvim/appearance.vim
 source $HOME/.config/nvim/base.vim
 source $HOME/.config/nvim/basecamp.vim
-source $HOME/.config/nvim/coc.vim
 source $HOME/.config/nvim/fzf.vim
 source $HOME/.config/nvim/navigation.vim
 source $HOME/.config/nvim/vim-test.vim
 source $HOME/.config/nvim/airline.vim
+source $HOME/.config/nvim/goyo.vim
 

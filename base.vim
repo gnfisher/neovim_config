@@ -41,12 +41,12 @@ set nojoinspaces
 set scrolloff=3
 set sidescrolloff=3
 set relativenumber
-set signcolumn=yes
+set signcolumn=no
 set tabstop=2
 set shiftwidth=2
 set shiftround
 set expandtab
-set list listchars=tab:»·,trail:·,nbsp:·
+set list listchars=trail:·,nbsp:·
 " Make it obvious where 80 characters is
 set colorcolumn=81
 set number
