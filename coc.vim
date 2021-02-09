@@ -33,7 +33,7 @@ nmap <silent> gk <Plug>(coc-diagnostic-next)
 nmap <silent> gd <Plug>(coc-definition)
 nmap <silent> gr <Plug>(coc-references)
 nmap <silent> gy <Plug>(coc-type-definition)
-nmap <silent> gi <Plug>(coc-implementation)
+" nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gi <Plug>(coc-diagnostic-info)
 
 nmap <leader>rn <Plug>(coc-rename)

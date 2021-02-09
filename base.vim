@@ -41,12 +41,12 @@ set nojoinspaces
 set scrolloff=3
 set sidescrolloff=3
 set relativenumber
-set signcolumn=no
+set signcolumn=yes
 set tabstop=2
 set shiftwidth=2
 set shiftround
 set expandtab
-set list listchars=trail:·,nbsp:·
+set list listchars=tab:»·,trail:·,nbsp:·
 " Make it obvious where 80 characters is
 set colorcolumn=81
 set number
@@ -141,3 +141,16 @@ tnoremap <leader><Esc> <C-\><C-n>
 " search
 nnoremap <leader>sub :%s///g<left><left>
 vnoremap <leader>sub :s///g<left><left>
+
+
+let g:ale_linters_explicit = 1
+let g:ale_lint_on_text_changed = 'normal'
+let g:ale_lint_on_insert_leave = 1
+let g:ale_lint_delay = 0
+let g:ale_set_quickfix = 0
+let g:ale_set_loclist = 0
+let g:ale_sign_column_always = 1
+nnoremap gd :ALEDetail<cr>
+nnoremap gj :ALENextWrap<cr>
+nnoremap gk :ALEPreviousWrap<cr>
+nnoremap g1 :ALEFirst<cr>
