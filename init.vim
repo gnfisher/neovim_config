@@ -34,7 +34,7 @@ Plug 'tpope/vim-endwise'
 Plug 'jiangmiao/auto-pairs'
 Plug 'vim-ruby/vim-ruby'
 Plug 'ElmCast/elm-vim'
-" Plug 'neoclide/coc.nvim', {'branch': 'release'} 
+Plug 'neoclide/coc.nvim', {'branch': 'release'} 
 Plug 'derekwyatt/vim-scala'
 Plug 'mattn/emmet-vim'
 Plug 'pangloss/vim-javascript'

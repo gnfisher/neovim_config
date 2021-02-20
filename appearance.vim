@@ -29,8 +29,8 @@ set t_Co=256 " 256 colors
 " a better pattern for drawing vertical borders.
 set fillchars+=vert:\|
 set termguicolors
-set background=light
-" colorscheme solarized
+set background=dark
+colorscheme jellybeans
 highlight clear SignColumn
 let g:is_posix = 1
 

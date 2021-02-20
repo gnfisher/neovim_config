@@ -2,8 +2,10 @@ set updatetime=300
 set shortmess+=c
 set signcolumn=yes
 
-autocmd BufNew,BufEnter *.vim,*.rb,*.erb execute "silent! CocDisable"
-autocmd BufLeave *.vim,*.rb,*.erb execute "silent! CocEnable"
+" autocmd BufNew,BufEnter *.vim,*.rb,*.erb execute "silent! CocDisable"
+" autocmd BufLeave *.vim,*.rb,*.erb execute "silent! CocEnable"
+" autocmd BufNew,BufEnter *.scala,*.sbt execute "silent! CocEnable"
+" autocmd BufLeave *.scala,*.sbt execute "silent! CocDisable"
 
 " hi link CocFloating normal
 " Use tab for trigger completion with characters ahead and navigate.
@@ -53,6 +55,7 @@ endfunction
 xmap <leader>f  <Plug>(coc-format-selected)
 nmap <leader>f  <Plug>(coc-format-selected)
 nnoremap <silent> <leader>F :call CocAction('format')<CR>
+nmap <silent> <leader>I <Plug>(coc-codeaction-selected)
 
 nmap <leader>do <Plug>(coc-codeaction)
 
@@ -74,7 +77,7 @@ command! -nargs=? Fold :call     CocAction('fold', <f-args>)
 command! -nargs=0 OR   :call     CocAction('runCommand', 'editor.action.organizeImport')
 
 " Add status line support, for integration with other plugin, checkout `:h coc-status`
-set statusline+=%{coc#status()}%{get(b:,'coc_current_function','')}
+" set statusline+=%{coc#status()}%{get(b:,'coc_current_function','')}
 
 " Using CocList
 " Show all diagnostics

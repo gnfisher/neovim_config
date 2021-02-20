@@ -1,17 +1,10 @@
 " set leader
 let mapleader = " "
 
-augroup CocGroup
-  autocmd!
-  " disable Coc for Ruby
-  autocmd BufNew,BufRead *.rb execute "silent! CocDisable"
-  " autocmd BufNew,BufEnter *.scala execute "silent! CocEnable"
-augroup end
-
 " Backspace deletes like most programs in insert mode
 set backspace=2
 " allow unsaced backgroudn buffers and remember their undo/marks
-set hidden 
+set hidden
 set undofile
 set undodir=~/.config/nvim/undodir
 set nowritebackup
@@ -123,7 +116,12 @@ inoremap <Tab> <C-r>=InsertTabWrapper()<CR>
 inoremap <S-Tab> <C-n>
 
 " statusline
-set statusline=%<%f\ (%{&ft})\ %-4(%m%)%=%-19(%3l,%02c%03V%)
+" set statusline=%<%f\ (%{&ft})\ %-4(%m%)%=%-19(%3l,%02c%03V%)
+
+" autocmd BufNew,BufEnter *.vim,*.rb,*.erb execute "silent! CocDisable"
+" autocmd BufLeave *.vim,*.rb,*.erb execute "silent! CocEnable"
+" autocmd BufNew,BufEnter *.scala,*.sbt execute "silent! CocEnable"
+" autocmd BufLeave *.scala,*.sbt execute "silent! CocDisable"
 
 set tags^=.git/tags
 
@@ -141,16 +139,3 @@ tnoremap <leader><Esc> <C-\><C-n>
 " search
 nnoremap <leader>sub :%s///g<left><left>
 vnoremap <leader>sub :s///g<left><left>
-
-
-let g:ale_linters_explicit = 1
-let g:ale_lint_on_text_changed = 'normal'
-let g:ale_lint_on_insert_leave = 1
-let g:ale_lint_delay = 0
-let g:ale_set_quickfix = 0
-let g:ale_set_loclist = 0
-let g:ale_sign_column_always = 1
-nnoremap gd :ALEDetail<cr>
-nnoremap gj :ALENextWrap<cr>
-nnoremap gk :ALEPreviousWrap<cr>
-nnoremap g1 :ALEFirst<cr>
